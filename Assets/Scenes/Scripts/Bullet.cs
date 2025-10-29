@@ -2,19 +2,22 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    public int damage;
+    public int damage = 2;
+    public float speed = 12f;
 
-    public float speed = 0.8f;
-
-    private void Update()
+    private void Start()
     {
-        transform.position += new Vector3(speed * Time.deltaTime, 0, 0);
-
+        Rigidbody2D rb = GetComponent<Rigidbody2D>();
+        if (rb != null)
+        {
+            rb.linearVelocity = Vector2.right * speed;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.TryGetComponent<Zombie>(out Zombie zombie)) {
+        if (collision.TryGetComponent<Zombie>(out Zombie zombie))
+        {
             zombie.Hit(damage);
             Destroy(gameObject);
         }

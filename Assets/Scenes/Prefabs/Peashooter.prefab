@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6846036340472595371}
   - component: {fileID: 4027019586606186457}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Fondo_Hojas_Union
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -102,7 +102,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4834718529032245978}
   - component: {fileID: 141558746738264887}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Frente_Hojas_Union1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -192,7 +192,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5849914668649417353}
   - component: {fileID: 5123678815062847625}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Fondo_Hojas_Union2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -282,7 +282,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5928565002944237203}
   - component: {fileID: 335289280109426444}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Frente_Hojas_Union2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -372,7 +372,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5744765092699386200}
   - component: {fileID: 3448260033851398904}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Torso
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -462,7 +462,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7850471062820266444}
   - component: {fileID: 1764252821108122207}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Frente_Hojas_Union
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -555,7 +555,9 @@ GameObject:
   - component: {fileID: 1513229661789925249}
   - component: {fileID: 2571869836100276966}
   - component: {fileID: 4820419215735602832}
-  m_Layer: 0
+  - component: {fileID: 2108673937778251435}
+  - component: {fileID: 8804319250167193057}
+  m_Layer: 10
   m_Name: Peashooter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -620,11 +622,70 @@ MonoBehaviour:
   bullet: {fileID: 5609542030626050130, guid: 36d8f74927287024da7738314297ea40, type: 3}
   shootOrigin: {fileID: 6717452294379085260}
   cooldown: 1.5
-  range: 10
+  range: 12
   shootMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
   animator: {fileID: 2571869836100276966}
+--- !u!114 &2108673937778251435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2286703881174891127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38127b5b2f61a02448f41984ffe44690, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Plant
+  health: 4
+--- !u!61 &8804319250167193057
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2286703881174891127}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0.039889246, y: 0.10739428}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1.0490947, y: 1.2147886}
+  m_EdgeRadius: 0
 --- !u!1 &2675840221995544831
 GameObject:
   m_ObjectHideFlags: 0
@@ -634,7 +695,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6717452294379085260}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: ShootOrigin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -666,7 +727,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2331633978929996752}
   - component: {fileID: 1345060674069427037}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cabeza_Pelito
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -756,7 +817,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3892587044287239977}
   - component: {fileID: 4470914661392872804}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cuello
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -847,7 +908,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5861531663239355602}
   - component: {fileID: 5286938749933078303}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sombra
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -937,7 +998,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1292307420562503372}
   - component: {fileID: 756848835839582348}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cabeza_Boca
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1027,7 +1088,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6143163029216023459}
   - component: {fileID: 5764994449926532328}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Fondo_Hojas_Union1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1117,7 +1178,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3337535609294568754}
   - component: {fileID: 5504843363371100793}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cabeza
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -21,8 +21,16 @@ public class GameManager : MonoBehaviour
     private void Update()
     {
         sunText.text = suns.ToString();
+
         Vector2 mousePosition = Mouse.current.position.ReadValue();
-        RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(mousePosition), Vector2.zero, Mathf.Infinity, tileMask);
+
+        if (!Camera.main.pixelRect.Contains(mousePosition))
+            return;
+
+        Vector3 worldPoint = Camera.main.ScreenToWorldPoint(mousePosition);
+        worldPoint.z = 0;
+
+        RaycastHit2D hit = Physics2D.Raycast(worldPoint, Vector2.zero, Mathf.Infinity, tileMask);
 
         foreach (Transform tile in tiles)
             tile.GetComponent<SpriteRenderer>().enabled = false;
@@ -41,15 +49,12 @@ public class GameManager : MonoBehaviour
             }
         }
 
-        RaycastHit2D sunHit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(mousePosition), Vector2.zero, Mathf.Infinity, sunMask);
+        RaycastHit2D sunHit = Physics2D.Raycast(worldPoint, Vector2.zero, Mathf.Infinity, sunMask);
 
-        if (sunHit.collider)
+        if (sunHit.collider && Mouse.current.leftButton.wasPressedThisFrame)
         {
-            if (Mouse.current.leftButton.wasPressedThisFrame)
-            {
-                suns += 25;
-                Destroy(sunHit.collider.gameObject);
-            }
+            suns += 25;
+            Destroy(sunHit.collider.gameObject);
         }
 
     }

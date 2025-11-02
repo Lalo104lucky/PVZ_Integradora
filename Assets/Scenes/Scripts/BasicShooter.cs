@@ -1,27 +1,31 @@
 using Unity.VisualScripting;
 using UnityEngine;
+using System.Collections;
 
 public class BasicShooter : MonoBehaviour
 {
+
     [Header("Shooting")]
     public GameObject bullet;
     public Transform shootOrigin;
-    public float cooldown;
-    public float range;
+
+    public float cooldown = 1.5f;
+    public float range = 10f;
     public LayerMask shootMask;
 
     [Header("Animation")]
     public Animator animator;
-    private static readonly int isAttacking = Animator.StringToHash("isAttacking");
 
+    private static readonly int isAttacking = Animator.StringToHash("isAttacking");
     private bool canShoot = true;
 
     private void Update()
     {
-        if(canShoot && ZombieInRange())
+        if (canShoot && ZombieInRange())
         {
             StartCoroutine(AttackSequence());
-        } else if (!ZombieInRange())
+        }
+        else if (!ZombieInRange())
         {
             animator.SetBool(isAttacking, false);
         }
@@ -33,28 +37,25 @@ public class BasicShooter : MonoBehaviour
         return hit.collider != null;
     }
 
-    System.Collections.IEnumerator AttackSequence()
+    IEnumerator AttackSequence()
     {
         canShoot = false;
         animator.SetBool(isAttacking, true);
 
-        yield return new WaitForSeconds(0.48f);
-
-        Shoot();
-
-        yield return new WaitForSeconds(cooldown - 0.48f);
+        yield return new WaitForSeconds(cooldown);
 
         canShoot = true;
 
-        if (!ZombieInRange()) {
+        if (!ZombieInRange()) 
+        {
             animator.SetBool(isAttacking, false);
         }
     }
 
-    void Shoot() {
-
+    public void Shoot() 
+    {
         if (bullet == null || shootOrigin == null) return;
 
-        GameObject mybullet = Instantiate(bullet, shootOrigin.position, Quaternion.identity);
+        Instantiate(bullet, shootOrigin.position, Quaternion.identity);
     }
 }

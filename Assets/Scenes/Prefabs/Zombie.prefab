@@ -104,8 +104,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e4fcd89c3c0cdf43a1c7b07b645c18e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Zombie
-  speed: 0.008
+  speed: 0.5
   health: 10
+  damage: 1
+  range: 0.5
+  eatCooldown: 1
+  plantMask:
+    serializedVersion: 2
+    m_Bits: 1024
+  targetPlant: {fileID: 0}
 --- !u!61 &7109505518520341407
 BoxCollider2D:
   m_ObjectHideFlags: 0

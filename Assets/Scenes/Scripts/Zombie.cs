@@ -5,17 +5,30 @@ using UnityEngineInternal;
 public class Zombie : MonoBehaviour
 {
     [Header("Movement")]
-    public float speed = 1f;
+    private float speed = 1f;
 
     [Header("Combat")]
-    public int health = 10;
-    public int damage = 1;
-    public float range = 1.5f;
-    public float eatCooldown = 1f;
+    private int health = 10;
+    private int damage = 1;
+    private float range = 1.5f;
+    private float eatCooldown = 1f;
     public LayerMask plantMask;
+
+    public ZombieTypes type;
 
     public Plant targetPlant;
     private bool canEat = true;
+
+    private void Start()
+    {
+        health = type.health;
+        speed = type.speed;
+        damage = type.damage;
+        range = type.range;
+
+        GetComponent<SpriteRenderer>().sprite = type.sprite;
+        eatCooldown = type.eatCooldown;
+    }
 
     private void FixedUpdate()
     {
@@ -35,6 +48,11 @@ public class Zombie : MonoBehaviour
             targetPlant = null;
         }
         transform.position -= new Vector3(speed * Time.fixedDeltaTime, 0, 0);
+
+        if(health == 1)
+        {
+            GetComponent<SpriteRenderer>().sprite = type.deathSprite;
+        }
     }
 
     void Eat()

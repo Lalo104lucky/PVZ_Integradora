@@ -29,7 +29,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.746, y: -0.547, z: 0}
-  m_LocalScale: {x: 0.7154, y: 1.50522, z: 1}
+  m_LocalScale: {x: 0.7154, y: 0.7154, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -81,8 +81,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.17105047, g: 0.3773585, b: 0.115699545, a: 1}
+  m_Sprite: {fileID: -5782521184205631276, guid: 494253c447ae63541afbbcdbb5d268c8, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -104,14 +104,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e4fcd89c3c0cdf43a1c7b07b645c18e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Zombie
-  speed: 0.5
-  health: 10
-  damage: 1
-  range: 0.5
-  eatCooldown: 1
   plantMask:
     serializedVersion: 2
     m_Bits: 1024
+  type: {fileID: 11400000, guid: c5490618754c60f409cda87a4e9e2225, type: 2}
   targetPlant: {fileID: 0}
 --- !u!61 &7109505518520341407
 BoxCollider2D:
@@ -151,11 +147,11 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 1.1125, y: 1.95}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.1125, y: 1.95}
   m_EdgeRadius: 0

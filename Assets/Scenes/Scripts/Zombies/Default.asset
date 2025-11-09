@@ -13,9 +13,13 @@ MonoBehaviour:
   m_Name: Default
   m_EditorClassIdentifier: Assembly-CSharp::ZombieTypes
   health: 10
-  speed: 0.2
+  speed: 0.4
   damage: 1
   range: 0.5
   eatCooldown: 1
   sprite: {fileID: -5782521184205631276, guid: 494253c447ae63541afbbcdbb5d268c8, type: 3}
   deathSprite: {fileID: 386325449022280302, guid: da2e7da6bdec5b14bb0e6dead67e756a, type: 3}
+  hitClips:
+  - {fileID: 8300000, guid: c4957c9b2178c804d81ccc3f5541e8d6, type: 3}
+  - {fileID: 8300000, guid: 74bc791b378c71240b83972844d2a4d1, type: 3}
+  - {fileID: 8300000, guid: 6a86c0ffc74f8e240ba565bbb10f6a38, type: 3}

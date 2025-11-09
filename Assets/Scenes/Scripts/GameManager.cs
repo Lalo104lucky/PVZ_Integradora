@@ -11,6 +11,16 @@ public class GameManager : MonoBehaviour
     public int suns;
     public TextMeshProUGUI sunText;
     public LayerMask sunMask;
+    public AudioClip plantSFX;
+    private AudioSource source;
+
+    public AudioSource sunSource;
+    public AudioClip sunClip;
+
+    private void Start()
+    {
+        source = GetComponent<AudioSource>();
+    }
 
     public void BuyPlant(GameObject plant, Sprite sprite)
     {
@@ -42,10 +52,7 @@ public class GameManager : MonoBehaviour
 
             if (Mouse.current.leftButton.wasPressedThisFrame && !hit.collider.GetComponent<Tile>().hasPlant)
             {
-                Instantiate(currentPlant, hit.collider.transform.position, Quaternion.identity);
-                hit.collider.GetComponent<Tile>().hasPlant = true;
-                currentPlant = null;
-                currentPlantSprite = null;
+                Plant(hit.collider.gameObject);
             }
         }
 
@@ -53,9 +60,20 @@ public class GameManager : MonoBehaviour
 
         if (sunHit.collider && Mouse.current.leftButton.wasPressedThisFrame)
         {
+            sunSource.pitch = Random.Range(0.9f, 1.1f);
+            sunSource.PlayOneShot(sunClip);
             suns += 25;
             Destroy(sunHit.collider.gameObject);
         }
 
+    }
+
+    void Plant(GameObject hit)
+    {
+        source.PlayOneShot(plantSFX);
+        Instantiate(currentPlant, hit.transform.position, Quaternion.identity);
+        hit.GetComponent<Tile>().hasPlant = true;
+        currentPlant = null;
+        currentPlantSprite = null;
     }
 }

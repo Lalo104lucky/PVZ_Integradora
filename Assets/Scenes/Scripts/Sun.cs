@@ -5,7 +5,7 @@ public class Sun : MonoBehaviour
 {
 
     public float dropToYPos;
-    private float speed = 2f;
+    private float speed = 1f;
     private void Start()
     {
 

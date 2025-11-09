@@ -1,0 +1,281 @@
+fileFormatVersion: 2
+guid: 3f2487b7b604c4e42ab7d6193401d94d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6018121518709768105
+    second: PC___Computer_-_Plants_vs._Zombies_-_Zombies_-_Regular_Zombies_0
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PC___Computer_-_Plants_vs._Zombies_-_Zombies_-_Regular_Zombies_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 607
+        width: 51
+        height: 46
+      alignment: 9
+      pivot: {x: 0.73902893, y: 0.12590624}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7508b263d565b7ca0800000000000000
+      internalID: -6018121518709768105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC___Computer_-_Plants_vs._Zombies_-_Zombies_-_Regular_Zombies_1
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 339
+        width: 41
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5129826, y: 0.9158732}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d900c841acc08ec428bf72c996d0b612
+      internalID: 1668709112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC___Computer_-_Plants_vs._Zombies_-_Zombies_-_Regular_Zombies_2
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 502
+        width: 31
+        height: 88
+      alignment: 9
+      pivot: {x: 0.6314717, y: 0.18738347}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e73754bd01051a4284556c0f5c094fa
+      internalID: 243200505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC___Computer_-_Plants_vs._Zombies_-_Zombies_-_Regular_Zombies_3
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 579
+        width: 49
+        height: 66
+      alignment: 9
+      pivot: {x: 0.76268035, y: 0.2158277}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbbd959bcc340084eb3d5c1e628e406e
+      internalID: -1400254001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC___Computer_-_Plants_vs._Zombies_-_Zombies_-_Regular_Zombies_4
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 608
+        width: 59
+        height: 45
+      alignment: 9
+      pivot: {x: 0.70208234, y: 0.041947428}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df26f799e1eeb624b964e0fa9e07fbd3
+      internalID: 565768809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC___Computer_-_Plants_vs._Zombies_-_Zombies_-_Regular_Zombies_5
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 563
+        width: 29
+        height: 14
+      alignment: 9
+      pivot: {x: 0.819801, y: 0.6282174}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5ef62378ec48ee46b26549d3bcbe878
+      internalID: -1078080505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC___Computer_-_Plants_vs._Zombies_-_Zombies_-_Regular_Zombies_6
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 441
+        width: 50
+        height: 59
+      alignment: 9
+      pivot: {x: 0.23673151, y: 0.8194518}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a6ff1469d753904ea33bf44c1732225
+      internalID: -834509346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: aa2863302c9f66445968309db1280499
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PC___Computer_-_Plants_vs._Zombies_-_Zombies_-_Regular_Zombies_0: -6018121518709768105
+      PC___Computer_-_Plants_vs._Zombies_-_Zombies_-_Regular_Zombies_1: 1668709112
+      PC___Computer_-_Plants_vs._Zombies_-_Zombies_-_Regular_Zombies_2: 243200505
+      PC___Computer_-_Plants_vs._Zombies_-_Zombies_-_Regular_Zombies_3: -1400254001
+      PC___Computer_-_Plants_vs._Zombies_-_Zombies_-_Regular_Zombies_4: 565768809
+      PC___Computer_-_Plants_vs._Zombies_-_Zombies_-_Regular_Zombies_5: -1078080505
+      PC___Computer_-_Plants_vs._Zombies_-_Zombies_-_Regular_Zombies_6: -834509346
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

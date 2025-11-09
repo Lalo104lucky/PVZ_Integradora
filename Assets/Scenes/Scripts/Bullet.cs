@@ -5,6 +5,7 @@ public class Bullet : MonoBehaviour
     public int damage = 2;
     public float speed = 12f;
 
+    public bool freeze;
     private void Start()
     {
         Rigidbody2D rb = GetComponent<Rigidbody2D>();
@@ -18,7 +19,7 @@ public class Bullet : MonoBehaviour
     {
         if (collision.TryGetComponent<Zombie>(out Zombie zombie))
         {
-            zombie.Hit(damage);
+            zombie.Hit(damage, freeze);
             Destroy(gameObject);
         }
     }

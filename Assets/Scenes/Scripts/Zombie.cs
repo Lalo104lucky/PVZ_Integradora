@@ -19,8 +19,13 @@ public class Zombie : MonoBehaviour
     public Plant targetPlant;
     private bool canEat = true;
 
+    private AudioSource source;
+
+    public AudioClip[] groans;
+
     private void Start()
     {
+        source = GetComponent<AudioSource>();
         health = type.health;
         speed = type.speed;
         damage = type.damage;
@@ -28,6 +33,12 @@ public class Zombie : MonoBehaviour
 
         GetComponent<SpriteRenderer>().sprite = type.sprite;
         eatCooldown = type.eatCooldown;
+        Invoke("Groan", Random.Range(1f, 20f));
+    }
+
+    void Groan()
+    {
+        source.PlayOneShot(groans[Random.Range(0, groans.Length)]);
     }
 
     private void FixedUpdate()
@@ -48,11 +59,6 @@ public class Zombie : MonoBehaviour
             targetPlant = null;
         }
         transform.position -= new Vector3(speed * Time.fixedDeltaTime, 0, 0);
-
-        if(health == 1)
-        {
-            GetComponent<SpriteRenderer>().sprite = type.deathSprite;
-        }
     }
 
     void Eat()
@@ -67,11 +73,33 @@ public class Zombie : MonoBehaviour
         canEat = true;
     }
 
-    public void Hit(int damage)
+    public void Hit(int damage, bool freeze)
     {
+        source.PlayOneShot(type.hitClips[Random.Range(0, type.hitClips.Length)]);
         health -= damage;
+        if(freeze)
+        {
+            Freeze();
+        }
         if (health <= 0)
-            Destroy(gameObject);
+        {
+            GetComponent<SpriteRenderer>().sprite = type.deathSprite;
+            Destroy(gameObject, 1);
+        }
+    }
+
+    void Freeze()
+    {
+        CancelInvoke("UnFreeze");
+        GetComponent<SpriteRenderer>().color = Color.blue;
+        speed = type.speed / 2;
+        Invoke("UnFreeze", 5);
+    }
+
+    void UnFreeze()
+    {
+        GetComponent<SpriteRenderer>().color = Color.white;
+        speed = type.speed;
     }
 }
 

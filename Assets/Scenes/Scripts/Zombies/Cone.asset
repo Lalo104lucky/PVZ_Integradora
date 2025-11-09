@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: Cone
   m_EditorClassIdentifier: Assembly-CSharp::ZombieTypes
   health: 15
-  speed: 0.2
+  speed: 0.4
   damage: 1
   range: 0.5
   eatCooldown: 1
   sprite: {fileID: 7977170862573690875, guid: 20e9f93cb8ab98746a66cbafc3bdc2a7, type: 3}
   deathSprite: {fileID: 386325449022280302, guid: da2e7da6bdec5b14bb0e6dead67e756a, type: 3}
+  hitClips:
+  - {fileID: 8300000, guid: e04ea8f37124d4940907becb6239f44b, type: 3}
+  - {fileID: 8300000, guid: fea3359cedb43ce4fa471ae585cb63f4, type: 3}

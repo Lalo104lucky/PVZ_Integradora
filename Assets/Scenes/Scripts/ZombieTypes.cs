@@ -17,5 +17,7 @@ public class ZombieTypes : ScriptableObject
     public Sprite sprite;
 
     public Sprite deathSprite;
+
+    public AudioClip[] hitClips;
     
 }

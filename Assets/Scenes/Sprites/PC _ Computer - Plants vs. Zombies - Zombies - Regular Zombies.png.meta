@@ -1,0 +1,465 @@
+fileFormatVersion: 2
+guid: 0dceb6a3b80b0534da66b199c11003a6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3295441005530386409
+    second: PC _ Computer - Plants vs. Zombies - Zombies - Regular Zombies_0
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PC _ Computer - Plants vs. Zombies - Zombies - Regular Zombies_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 607
+        width: 50
+        height: 46
+      alignment: 9
+      pivot: {x: 0.8137472, y: 0.115165375}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ef05e07222cbbd20800000000000000
+      internalID: 3295441005530386409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Plants vs. Zombies - Zombies - Regular Zombies_1
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 563
+        width: 30
+        height: 13
+      alignment: 9
+      pivot: {x: 0.80441767, y: 0.7419762}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4f7f38b755563c4b86e622dbd9eceb8
+      internalID: -1374808942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Plants vs. Zombies - Zombies - Regular Zombies_2
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 439
+        width: 51
+        height: 61
+      alignment: 9
+      pivot: {x: 0.29565278, y: 0.87897235}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 480adaec8802cd148928df33c1a49543
+      internalID: -44224872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Plants vs. Zombies - Zombies - Regular Zombies_3
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 395
+        width: 15
+        height: 33
+      alignment: 9
+      pivot: {x: 0.45763284, y: 0.93991923}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a95654bb2f9c3c143b15acd836a24334
+      internalID: -190834412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Plants vs. Zombies - Zombies - Regular Zombies_4
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 472
+        width: 15
+        height: 28
+      alignment: 9
+      pivot: {x: 0.86557716, y: 0.9683282}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75fb9e84eaf80a54f816009f379f787a
+      internalID: -1273070267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Plants vs. Zombies - Zombies - Regular Zombies_5
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 365
+        width: 17
+        height: 27
+      alignment: 9
+      pivot: {x: 0.8663347, y: 0.9118844}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5cd1c3fd86545b49b00636511103942
+      internalID: 992215475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Plants vs. Zombies - Zombies - Regular Zombies_6
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 338
+        width: 24
+        height: 26
+      alignment: 9
+      pivot: {x: 0.52224183, y: 0.94483596}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 766c325788a001c4aa7e65cf7a791732
+      internalID: -229246530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Plants vs. Zombies - Zombies - Regular Zombies_7
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 335
+        width: 22
+        height: 28
+      alignment: 9
+      pivot: {x: 0.94079155, y: 0.20768084}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9254569da1927b749bdcb03b00fc1e8d
+      internalID: 1849392946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Plants vs. Zombies - Zombies - Regular Zombies_8
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 405
+        width: 13
+        height: 22
+      alignment: 9
+      pivot: {x: 0.40419036, y: 0.9488817}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b21e56ffb9b5e8f4d83c36bd4d2ef35f
+      internalID: -345659327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Plants vs. Zombies - Zombies - Regular Zombies_9
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 380
+        width: 17
+        height: 22
+      alignment: 9
+      pivot: {x: 0.69363314, y: 0.9407917}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6b7fd721b8030a4297b63dc7b935d74
+      internalID: 154321653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Plants vs. Zombies - Zombies - Regular Zombies_10
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 356
+        width: 18
+        height: 22
+      alignment: 9
+      pivot: {x: 0.5840251, y: 0.95292383}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f951ee72889112045b56b5a792e1c354
+      internalID: 338131019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Plants vs. Zombies - Zombies - Regular Zombies_11
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 284
+        width: 19
+        height: 38
+      alignment: 9
+      pivot: {x: 0.51240015, y: 0.9277577}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3da6a2a1cf626c4d93b1b3612e86924
+      internalID: 1249382991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Plants vs. Zombies - Zombies - Regular Zombies_12
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 294
+        width: 22
+        height: 28
+      alignment: 9
+      pivot: {x: 0.20017363, y: 0.8786054}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ce50249490366542b351b0db0abb28e
+      internalID: -1008055169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Plants vs. Zombies - Zombies - Regular Zombies_13
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 303
+        width: 40
+        height: 19
+      alignment: 9
+      pivot: {x: 0.82980764, y: 0.92155695}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92b6def9d0c7a1d4c8740e01854700a9
+      internalID: 1813778172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Plants vs. Zombies - Zombies - Regular Zombies_14
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 513
+        width: 60
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e70de917c34e2e46934d2a53a0db550
+      internalID: 449082254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: d18f507d83f52f743bbff05277ec761e
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PC _ Computer - Plants vs. Zombies - Zombies - Regular Zombies_0: 3295441005530386409
+      PC _ Computer - Plants vs. Zombies - Zombies - Regular Zombies_1: -1374808942
+      PC _ Computer - Plants vs. Zombies - Zombies - Regular Zombies_10: 338131019
+      PC _ Computer - Plants vs. Zombies - Zombies - Regular Zombies_11: 1249382991
+      PC _ Computer - Plants vs. Zombies - Zombies - Regular Zombies_12: -1008055169
+      PC _ Computer - Plants vs. Zombies - Zombies - Regular Zombies_13: 1813778172
+      PC _ Computer - Plants vs. Zombies - Zombies - Regular Zombies_14: 449082254
+      PC _ Computer - Plants vs. Zombies - Zombies - Regular Zombies_2: -44224872
+      PC _ Computer - Plants vs. Zombies - Zombies - Regular Zombies_3: -190834412
+      PC _ Computer - Plants vs. Zombies - Zombies - Regular Zombies_4: -1273070267
+      PC _ Computer - Plants vs. Zombies - Zombies - Regular Zombies_5: 992215475
+      PC _ Computer - Plants vs. Zombies - Zombies - Regular Zombies_6: -229246530
+      PC _ Computer - Plants vs. Zombies - Zombies - Regular Zombies_7: 1849392946
+      PC _ Computer - Plants vs. Zombies - Zombies - Regular Zombies_8: -345659327
+      PC _ Computer - Plants vs. Zombies - Zombies - Regular Zombies_9: 154321653
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

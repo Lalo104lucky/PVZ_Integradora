@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: Bucket
   m_EditorClassIdentifier: Assembly-CSharp::ZombieTypes
   health: 20
-  speed: 0.2
+  speed: 0.4
   damage: 1
   range: 0.5
   eatCooldown: 1
   sprite: {fileID: 7151955249762826636, guid: 5fcc0fefd55f1d848a4359a4318bfe2e, type: 3}
   deathSprite: {fileID: 386325449022280302, guid: da2e7da6bdec5b14bb0e6dead67e756a, type: 3}
+  hitClips:
+  - {fileID: 8300000, guid: a6c59f89fdc74ed4d833efd608400183, type: 3}
+  - {fileID: 8300000, guid: 54b72ec8f45fa4948954f14fdb0a714a, type: 3}

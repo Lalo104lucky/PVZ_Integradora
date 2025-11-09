@@ -19,6 +19,14 @@ public class BasicShooter : MonoBehaviour
     private static readonly int isAttacking = Animator.StringToHash("isAttacking");
     private bool canShoot = true;
 
+    private AudioSource source;
+    public AudioClip[] shootClips;
+
+    private void Start()
+    {
+        source = gameObject.GetComponent<AudioSource>();
+    }
+
     private void Update()
     {
         if (canShoot && ZombieInRange())
@@ -55,7 +63,7 @@ public class BasicShooter : MonoBehaviour
     public void Shoot() 
     {
         if (bullet == null || shootOrigin == null) return;
-
+        source.PlayOneShot(shootClips[Random.Range(0, shootClips.Length)]);
         Instantiate(bullet, shootOrigin.position, Quaternion.identity);
     }
 }

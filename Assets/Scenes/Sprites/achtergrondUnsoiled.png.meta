@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: e5d5e2e3a351a514a95723dd7615c032
+guid: 0bcd5377efd0d8f4ca800ea9e064bcad
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3675247853582719284
-    second: sunFlower_0
+      213: 4991360446356285794
+    second: achtergrondUnsoiled_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,23 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sunFlower_0
+      name: achtergrondUnsoiled_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 1
-        width: 103
-        height: 116
+        x: 0
+        y: 0
+        width: 1398
+        height: 600
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4399056537a110330800000000000000
-      internalID: 3675247853582719284
+      spriteID: 269600f61efd44540800000000000000
+      internalID: 4991360446356285794
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: f08e4043e4dd5324096506af790b35aa
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      sunFlower_0: 3675247853582719284
+      achtergrondUnsoiled_0: 4991360446356285794
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

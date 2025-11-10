@@ -21,6 +21,7 @@ public class BasicShooter : MonoBehaviour
 
     private AudioSource source;
     public AudioClip[] shootClips;
+    public AudioClip freezeShoot;
 
     private void Start()
     {
@@ -64,6 +65,9 @@ public class BasicShooter : MonoBehaviour
     {
         if (bullet == null || shootOrigin == null) return;
         source.PlayOneShot(shootClips[Random.Range(0, shootClips.Length)]);
+
+        if(freezeShoot != null)
+            source.PlayOneShot(freezeShoot);
         Instantiate(bullet, shootOrigin.position, Quaternion.identity);
     }
 }

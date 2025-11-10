@@ -958,6 +958,7 @@ MonoBehaviour:
   shootClips:
   - {fileID: 8300000, guid: 8cde1d8f34425294497e248c5699994b, type: 3}
   - {fileID: 8300000, guid: ba0c042e172ab194a98c8351487b6caa, type: 3}
+  freezeShoot: {fileID: 8300000, guid: 04057aad73deedd4c8bcb520b9fd791d, type: 3}
 --- !u!82 &-8425594222413456214
 AudioSource:
   m_ObjectHideFlags: 0

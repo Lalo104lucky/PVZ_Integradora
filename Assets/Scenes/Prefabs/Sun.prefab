@@ -78,7 +78,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 28
+  m_SortingOrder: 998
   m_Sprite: {fileID: 2057233551487085883, guid: adfeac1ff99c2494699d2e60655a9c7f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -168,7 +168,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 30
+  m_SortingOrder: 1000
   m_Sprite: {fileID: 7434733632593688057, guid: 06be0c1383d6a0a4a9a4f64b5cc059a2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -229,6 +229,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fba4523daa4ae542a1d3153c8ba87ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  dropToYPos: 0
 --- !u!61 &-952967542100932736
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -375,7 +376,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 29
+  m_SortingOrder: 999
   m_Sprite: {fileID: -190072697222075022, guid: 2c2a516f59c831844b273923d4092bc5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

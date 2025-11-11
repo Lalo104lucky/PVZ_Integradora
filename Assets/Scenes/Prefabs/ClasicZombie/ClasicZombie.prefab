@@ -861,7 +861,7 @@ GameObject:
   - component: {fileID: 218562258680713497}
   - component: {fileID: 7290518046447032730}
   m_Layer: 0
-  m_Name: PC _ Computer - Plants vs. Zombies - Zombies - Regular Zombies_7
+  m_Name: ManoComiendo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1298,7 +1298,7 @@ GameObject:
   - component: {fileID: 4502664059661756539}
   - component: {fileID: 3044927846472496182}
   m_Layer: 0
-  m_Name: PC _ Computer - Plants vs. Zombies - Zombies - Regular Zombies_6
+  m_Name: ManoCaminando
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1326,7 +1326,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8457357708392514596}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1

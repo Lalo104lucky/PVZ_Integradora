@@ -4050,12 +4050,12 @@ MonoBehaviour:
   tiles: {fileID: 288758804}
   tileMask:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 0
   suns: 1250
   sunText: {fileID: 1468456520}
   sunMask:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 0
 --- !u!4 &936352678
 Transform:
   m_ObjectHideFlags: 0

@@ -3712,10 +3712,12 @@ MonoBehaviour:
     probability: 2
   - type: {fileID: 11400000, guid: 2c493a21274000842a532eb7d00aae0e, type: 2}
     probability: 1
-  zombieMax: 20
+  zombieMax: 30
   zombiesSpawned: 0
-  zombieDelay: 5
+  zombiesAlive: 0
+  zombieDelay: 9
   progressBar: {fileID: 338527537}
+  gameManager: {fileID: 936352677}
 --- !u!4 &711180672
 Transform:
   m_ObjectHideFlags: 0

@@ -10,7 +10,7 @@ public class MenuManager : MonoBehaviour
 
     public void LoadGame()
     {
-
+        SceneManager.LoadScene(PlayerPrefs.GetInt("levelSave"));
     }
 
     public void Quit()

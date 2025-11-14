@@ -4,6 +4,7 @@ public class Plant : MonoBehaviour
 {
 
     public int health;
+    public Tile myTile;
 
     private void Start()
     {
@@ -15,7 +16,16 @@ public class Plant : MonoBehaviour
         health -= damage;
         if(health <= 0)
         {
-            Destroy(gameObject);
+            Die();
         }
+    }
+
+    void Die()
+    {
+        if (myTile != null)
+        {
+            myTile.hasPlant = false;
+        }
+        Destroy(gameObject);
     }
 }

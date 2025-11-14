@@ -17,13 +17,18 @@ public class ZombieSpawner : MonoBehaviour
 
     public int zombiesSpawned;
 
+    public int zombiesAlive;
+
     public float zombieDelay = 5;
 
     public Slider progressBar;
 
+    [SerializeField] private GameManager gameManager;
+
     private void Start()
     {
-        InvokeRepeating("SpawnZombie", 10, zombieDelay);
+        zombiesAlive = 0;
+        InvokeRepeating("SpawnZombie", 15, zombieDelay);
 
         foreach(ZombieTypeProb zom in zombieTypes)
         {
@@ -45,9 +50,24 @@ public class ZombieSpawner : MonoBehaviour
         if (zombiesSpawned >= zombieMax)
             return;
         zombiesSpawned++;
+        zombiesAlive++;
+
         int r = Random.Range(0, spawnPoints.Length);
         GameObject myZombie = Instantiate(zombie, spawnPoints[r].position, Quaternion.identity);
         myZombie.GetComponent<Zombie>().type = probList[Random.Range(0, probList.Count)];
+
+        if (zombiesSpawned >= zombieMax)
+            myZombie.GetComponent<Zombie>().lastZombie = true;
+    }
+
+    public void OnZombieKilled()
+    {
+        zombiesAlive--;
+
+        if(zombiesAlive <= 0 && zombiesSpawned >= zombieMax)
+        {
+            gameManager.Win();
+        }
     }
 }
 

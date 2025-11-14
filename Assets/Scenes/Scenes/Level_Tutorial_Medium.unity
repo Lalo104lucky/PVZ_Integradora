@@ -2908,8 +2908,10 @@ MonoBehaviour:
     probability: 1
   zombieMax: 20
   zombiesSpawned: 0
-  zombieDelay: 5
+  zombiesAlive: 0
+  zombieDelay: 10
   progressBar: {fileID: 338527537}
+  gameManager: {fileID: 936352677}
 --- !u!4 &711180672
 Transform:
   m_ObjectHideFlags: 0
@@ -6568,7 +6570,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: -582125824824559509, guid: fc89ad4d712429c4ba92d36024cb9ec4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -6589,8 +6591,8 @@ Transform:
   m_GameObject: {fileID: 1802437341}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.6974, y: -0.3757, z: 0}
-  m_LocalScale: {x: 5.1954007, y: 5.0062003, z: 1}
+  m_LocalPosition: {x: 0.7188, y: -0.49, z: 0}
+  m_LocalScale: {x: 5.188905, y: 5.0062003, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}

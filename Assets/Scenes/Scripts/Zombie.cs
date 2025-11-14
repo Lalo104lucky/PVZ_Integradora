@@ -23,6 +23,8 @@ public class Zombie : MonoBehaviour
 
     public AudioClip[] groans;
 
+    public bool lastZombie;
+
     private void Start()
     {
         source = GetComponent<AudioSource>();
@@ -84,6 +86,13 @@ public class Zombie : MonoBehaviour
         if (health <= 0)
         {
             GetComponent<SpriteRenderer>().sprite = type.deathSprite;
+
+            ZombieSpawner spawner = FindFirstObjectByType<ZombieSpawner>();
+            if (spawner != null)
+            {
+                spawner.OnZombieKilled();
+            }
+
             Destroy(gameObject, 1);
         }
     }

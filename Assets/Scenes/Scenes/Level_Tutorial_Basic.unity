@@ -1695,8 +1695,10 @@ MonoBehaviour:
     probability: 1
   zombieMax: 10
   zombiesSpawned: 0
+  zombiesAlive: 0
   zombieDelay: 10
   progressBar: {fileID: 338527537}
+  gameManager: {fileID: 936352677}
 --- !u!4 &711180672
 Transform:
   m_ObjectHideFlags: 0

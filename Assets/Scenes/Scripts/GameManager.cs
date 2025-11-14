@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class GameManager : MonoBehaviour
@@ -20,6 +21,17 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         source = GetComponent<AudioSource>();
+    }
+
+    public void Win()
+    {
+        if (SceneManager.GetActiveScene().buildIndex + 1 > SceneManager.sceneCountInBuildSettings - 1)
+        {
+            SceneManager.LoadScene(0);
+            return;
+        }
+        PlayerPrefs.SetInt("levelSave", SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     public void BuyPlant(GameObject plant, Sprite sprite)
@@ -71,8 +83,18 @@ public class GameManager : MonoBehaviour
     void Plant(GameObject hit)
     {
         source.PlayOneShot(plantSFX);
-        Instantiate(currentPlant, hit.transform.position, Quaternion.identity);
-        hit.GetComponent<Tile>().hasPlant = true;
+
+        GameObject plantObj = Instantiate(currentPlant, hit.transform.position, Quaternion.identity);
+
+        Tile tile = hit.GetComponent<Tile>();
+        tile.hasPlant = true;
+
+        Plant plant = plantObj.GetComponent<Plant>();
+        if(plant != null)
+        {
+            plant.myTile = tile;
+        }
+
         currentPlant = null;
         currentPlantSprite = null;
     }

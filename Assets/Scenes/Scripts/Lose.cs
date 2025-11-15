@@ -26,7 +26,7 @@ public class Lose : MonoBehaviour
     { 
         if(collision.CompareTag("Zombie"))
         {
-            if (hasLost)
+            if (hasLost || collision.GetComponent<Zombie>().dead)
                 return;
             hasLost = true;
             source.PlayOneShot(loseMusic);

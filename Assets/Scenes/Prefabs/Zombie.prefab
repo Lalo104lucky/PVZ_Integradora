@@ -117,6 +117,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 3eb957cdbd7ef4e41a4c2400d825168d, type: 3}
   - {fileID: 8300000, guid: a389627870182714781dc68b762091b0, type: 3}
   - {fileID: 8300000, guid: 20a119e106d24c14fb075eb23faf039e, type: 3}
+  lastZombie: 0
+  dead: 0
 --- !u!61 &7109505518520341407
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -151,7 +153,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.20744553}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -161,7 +163,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.1125, y: 1.95}
+  m_Size: {x: 1.1125, y: 1.535109}
   m_EdgeRadius: 0
 --- !u!82 &3140085005262931955
 AudioSource:

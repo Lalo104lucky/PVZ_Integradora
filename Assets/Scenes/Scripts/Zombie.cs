@@ -25,6 +25,8 @@ public class Zombie : MonoBehaviour
 
     public bool lastZombie;
 
+    public bool dead;
+
     private void Start()
     {
         source = GetComponent<AudioSource>();
@@ -85,6 +87,7 @@ public class Zombie : MonoBehaviour
         }
         if (health <= 0)
         {
+            dead = true;
             GetComponent<SpriteRenderer>().sprite = type.deathSprite;
 
             ZombieSpawner spawner = FindFirstObjectByType<ZombieSpawner>();

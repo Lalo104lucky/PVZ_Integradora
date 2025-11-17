@@ -14,7 +14,10 @@ public class Plant : MonoBehaviour
     public void Hit(int damage)
     {
         health -= damage;
-        if(health <= 0)
+        var wallnut = GetComponent<Wallnut>();
+        if (wallnut != null)
+            wallnut.OnPlantHit();
+        if (health <= 0)
         {
             Die();
         }

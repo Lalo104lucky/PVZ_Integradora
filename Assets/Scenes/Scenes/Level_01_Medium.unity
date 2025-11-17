@@ -5701,7 +5701,7 @@ MonoBehaviour:
   tileMask:
     serializedVersion: 2
     m_Bits: 64
-  suns: 1250
+  suns: 300
   sunText: {fileID: 1468456520}
   sunMask:
     serializedVersion: 2
@@ -6387,12 +6387,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.HorizontalLayoutGroup
   m_Padding:
-    m_Left: 10
+    m_Left: 8
     m_Right: 0
     m_Top: 0
     m_Bottom: 0
   m_ChildAlignment: 3
-  m_Spacing: 0
+  m_Spacing: -8
   m_ChildForceExpandWidth: 0
   m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 0

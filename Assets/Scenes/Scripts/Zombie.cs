@@ -34,9 +34,17 @@ public class Zombie : MonoBehaviour
         speed = type.speed;
         damage = type.damage;
         range = type.range;
-
-        GetComponent<SpriteRenderer>().sprite = type.sprite;
         eatCooldown = type.eatCooldown;
+
+        if (type.zombiePrefab != null) 
+        {
+            SpriteRenderer prefabSR = type.zombiePrefab.GetComponent<SpriteRenderer>();
+            if (prefabSR != null && prefabSR.sprite != null)
+            {
+                GetComponent<SpriteRenderer>().sprite = prefabSR.sprite;
+            }
+        }
+        
         Invoke("Groan", Random.Range(1f, 20f));
     }
 
@@ -88,7 +96,14 @@ public class Zombie : MonoBehaviour
         if (health <= 0)
         {
             dead = true;
-            GetComponent<SpriteRenderer>().sprite = type.deathSprite;
+            if (type.zombiePrefab != null)
+            {
+                SpriteRenderer prefabSR = type.zombiePrefab.GetComponent<SpriteRenderer>();
+                if (prefabSR != null && type.deathSprite != null)
+                {
+                    GetComponent<SpriteRenderer>().sprite = type.deathSprite;
+                }
+            }
 
             ZombieSpawner spawner = FindFirstObjectByType<ZombieSpawner>();
             if (spawner != null)

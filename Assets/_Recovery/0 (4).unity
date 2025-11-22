@@ -4268,7 +4268,7 @@ MonoBehaviour:
   - {fileID: 1833625596}
   - {fileID: 1591584022}
   - {fileID: 1873804798}
-  zombie: {fileID: 2830645480252905411, guid: 65c627e4f620aad488c7db8a226928a5, type: 3}
+  zombie: {fileID: 7878938959844734247, guid: 33e245f7cc7c8ff449cab8b8ffad26ae, type: 3}
   zombieTypes:
   - type: {fileID: 11400000, guid: c5490618754c60f409cda87a4e9e2225, type: 2}
     probability: 4

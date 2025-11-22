@@ -429,6 +429,28 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Plants vs. Zombies - Zombies - Regular Zombies_15
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 481
+        width: 18
+        height: 20
+      alignment: 9
+      pivot: {x: 0.47997794, y: 0.53604126}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c27839f151bc2a8478634c09b4375e18
+      internalID: -866271327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -450,6 +472,7 @@ TextureImporter:
       PC _ Computer - Plants vs. Zombies - Zombies - Regular Zombies_12: -1008055169
       PC _ Computer - Plants vs. Zombies - Zombies - Regular Zombies_13: 1813778172
       PC _ Computer - Plants vs. Zombies - Zombies - Regular Zombies_14: 449082254
+      PC _ Computer - Plants vs. Zombies - Zombies - Regular Zombies_15: -866271327
       PC _ Computer - Plants vs. Zombies - Zombies - Regular Zombies_2: -44224872
       PC _ Computer - Plants vs. Zombies - Zombies - Regular Zombies_3: -190834412
       PC _ Computer - Plants vs. Zombies - Zombies - Regular Zombies_4: -1273070267

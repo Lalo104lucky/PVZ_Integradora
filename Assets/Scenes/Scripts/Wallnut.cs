@@ -23,7 +23,6 @@ public class Wallnut : MonoBehaviour
         SetPhase(1);
     }
 
-    // Este método debe ser llamado por Plant.Hit(int damage)
     public void OnPlantHit()
     {
         UpdatePhase();
@@ -45,6 +44,8 @@ public class Wallnut : MonoBehaviour
         {
             SetPhase(newPhase);
         }
+
+        Debug.Log($"Wallnut Health: {plant.health}, Phase: {newPhase}");
     }
 
     private void SetPhase(int phase)

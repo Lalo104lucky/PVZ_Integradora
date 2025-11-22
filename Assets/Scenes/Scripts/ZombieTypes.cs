@@ -14,7 +14,7 @@ public class ZombieTypes : ScriptableObject
 
     public float eatCooldown = 1f;
 
-    public Sprite sprite;
+    public GameObject zombiePrefab;
 
     public Sprite deathSprite;
 

@@ -5707,14 +5707,14 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   suns: 300
-  sunText: {fileID: 1468456520}
   sunMask:
     serializedVersion: 2
     m_Bits: 256
   plantSFX: {fileID: 8300000, guid: 07e1919623f56d7439f7504966b203e9, type: 3}
+  buzzerClip: {fileID: 8300000, guid: 61c633f03686fb547a64caaf7e250ad8, type: 3}
+  bigSunCounterText: {fileID: 1468456520}
   sunSource: {fileID: 1958630447}
   sunClip: {fileID: 8300000, guid: 60835f2a97b716b42ac262ca02e2cfa5, type: 3}
-  buzzerClip: {fileID: 8300000, guid: 61c633f03686fb547a64caaf7e250ad8, type: 3}
 --- !u!4 &936352678
 Transform:
   m_ObjectHideFlags: 0

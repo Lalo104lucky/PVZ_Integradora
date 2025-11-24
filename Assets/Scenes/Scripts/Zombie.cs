@@ -32,7 +32,12 @@ public class Zombie : MonoBehaviour
     public bool dead;
 
     private Animator animator;
+    private MaterialPropertyBlock propBlock;
     private Renderer[] allRenderers;
+    private Color frozenColor = new Color(0.2f, 0.5f, 0.9f);
+    private Color normalColor = Color.white;
+
+    private int currentPhase = 0;
 
     private void Start()
     {
@@ -44,8 +49,27 @@ public class Zombie : MonoBehaviour
         damage = type.damage;
         range = type.range;
         eatCooldown = type.eatCooldown;
-        
+        allRenderers = GetComponentsInChildren<Renderer>();
+        propBlock = new MaterialPropertyBlock();
+
+        UpdatePhase();
+        animator.SetInteger("Phase", currentPhase);
+
         Invoke("Groan", Random.Range(1f, 20f));
+    }
+
+    private void UpdatePhase()
+    {
+        if (type.health <= 0) return;
+
+        float healthPercent = (float)health / type.health;
+
+        if (healthPercent > 0.66f)
+            currentPhase = 0;
+        else if (healthPercent > 0.33f)
+            currentPhase = 1;
+        else
+            currentPhase = 2;
     }
 
     void Groan()
@@ -115,7 +139,11 @@ public class Zombie : MonoBehaviour
 
         source.PlayOneShot(type.hitClips[Random.Range(0, type.hitClips.Length)]);
         health -= damage;
-        if(freeze)
+
+        UpdatePhase();
+        animator.SetInteger("Phase", currentPhase);
+
+        if (freeze)
         {
             Freeze();
         }
@@ -141,6 +169,9 @@ public class Zombie : MonoBehaviour
 
     void Freeze()
     {
+        if (isFrozen) return;
+        isFrozen = true;
+
         CancelInvoke("UnFreeze");
 
         if (!isFrozen && freezeClip != null)
@@ -149,11 +180,16 @@ public class Zombie : MonoBehaviour
             isFrozen = true;
         }
 
+        allRenderers = GetComponentsInChildren<Renderer>(true);
+
         foreach (Renderer rend in allRenderers)
         {
             if (rend != null)
             {
-                rend.material.color = new Color(0.2f, 0.5f, 0.9f);
+                rend.GetPropertyBlock(propBlock);
+                propBlock.SetColor("_Color", frozenColor);
+                propBlock.SetColor("_BaseColor", frozenColor);
+                rend.SetPropertyBlock(propBlock);
             }
         }
         speed = type.speed / 2;
@@ -163,12 +199,16 @@ public class Zombie : MonoBehaviour
     void UnFreeze()
     {
         isFrozen = false;
+        allRenderers = GetComponentsInChildren<Renderer>(true);
 
         foreach (Renderer rend in allRenderers)
         {
             if (rend != null)
             {
-                rend.material.color = Color.white;
+                rend.GetPropertyBlock(propBlock);
+                propBlock.SetColor("_Color", normalColor);
+                propBlock.SetColor("_BaseColor", normalColor);
+                rend.SetPropertyBlock(propBlock);
             }
         }
         speed = type.speed;

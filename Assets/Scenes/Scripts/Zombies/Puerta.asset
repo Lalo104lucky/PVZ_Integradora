@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c91ced3ddbb69dc46810f7b5a86a5838, type: 3}
-  m_Name: Cone
+  m_Name: Puerta
   m_EditorClassIdentifier: Assembly-CSharp::ZombieTypes
-  health: 30
+  health: 40
   speed: 0.4
   damage: 1
   range: 0.5
   eatCooldown: 1
-  zombiePrefab: {fileID: 2830645480252905411, guid: 0ed439c29b43dd945a7f5cb2d1644144, type: 3}
+  zombiePrefab: {fileID: 2830645480252905411, guid: a3db4787371af06498d29f3f238c74b2, type: 3}
   deathSprite: {fileID: 386325449022280302, guid: da2e7da6bdec5b14bb0e6dead67e756a, type: 3}
   hitClips:
-  - {fileID: 8300000, guid: e04ea8f37124d4940907becb6239f44b, type: 3}
-  - {fileID: 8300000, guid: fea3359cedb43ce4fa471ae585cb63f4, type: 3}
+  - {fileID: 8300000, guid: a6c59f89fdc74ed4d833efd608400183, type: 3}
+  - {fileID: 8300000, guid: 54b72ec8f45fa4948954f14fdb0a714a, type: 3}

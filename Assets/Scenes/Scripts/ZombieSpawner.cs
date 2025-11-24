@@ -7,8 +7,6 @@ public class ZombieSpawner : MonoBehaviour
 {
     public Transform[] spawnPoints;
 
-    public GameObject zombie;
-
     public ZombieTypeProb[] zombieTypes;
 
     private List<ZombieTypes> probList = new List<ZombieTypes>();
@@ -52,12 +50,14 @@ public class ZombieSpawner : MonoBehaviour
         zombiesSpawned++;
         zombiesAlive++;
 
+        ZombieTypes selectedType = probList[Random.Range(0, probList.Count)];
         int r = Random.Range(0, spawnPoints.Length);
-        GameObject myZombie = Instantiate(zombie, spawnPoints[r].position, Quaternion.identity);
-        myZombie.GetComponent<Zombie>().type = probList[Random.Range(0, probList.Count)];
+        GameObject myZombie = Instantiate(selectedType.zombiePrefab, spawnPoints[r].position, Quaternion.identity);
+        Zombie zombieScript = myZombie.GetComponent<Zombie>();
+        zombieScript.type = selectedType;
 
         if (zombiesSpawned >= zombieMax)
-            myZombie.GetComponent<Zombie>().lastZombie = true;
+            zombieScript.lastZombie = true;
     }
 
     public void OnZombieKilled()

@@ -4271,7 +4271,6 @@ MonoBehaviour:
   - {fileID: 1833625596}
   - {fileID: 1591584022}
   - {fileID: 1873804798}
-  zombie: {fileID: 2830645480252905411, guid: 65c627e4f620aad488c7db8a226928a5, type: 3}
   zombieTypes:
   - type: {fileID: 11400000, guid: c5490618754c60f409cda87a4e9e2225, type: 2}
     probability: 4
@@ -4279,6 +4278,8 @@ MonoBehaviour:
     probability: 2
   - type: {fileID: 11400000, guid: 2c493a21274000842a532eb7d00aae0e, type: 2}
     probability: 1
+  - type: {fileID: 11400000, guid: cd5e21e92bd0fea4e9f727af6320de6a, type: 2}
+    probability: 2
   zombieMax: 30
   zombiesSpawned: 0
   zombiesAlive: 0

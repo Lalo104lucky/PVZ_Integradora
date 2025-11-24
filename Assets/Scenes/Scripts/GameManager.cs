@@ -139,7 +139,6 @@ public class GameManager : MonoBehaviour
             NotEnoughSuns();
             return;
         }
-        Debug.Log("Soles totales " + suns + " Planta que se quiere sembrar " + currentPlantPrice);
 
         suns -= currentPlantPrice;
         UpdateSunText();

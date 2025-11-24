@@ -1,0 +1,9 @@
+# Ignorar todo
+*
+
+# Pero NO ignorar estas carpetas
+!Assets/
+!Assets/**
+
+# Permitir archivo .gitignore
+!.gitignore

@@ -1,9 +1,21 @@
-# Ignorar todo
-*
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Mm]emoryCaptures/
+UserSettings/
 
-# Pero NO ignorar estas carpetas
-!Assets/
-!Assets/**
+# Archivos de VS y Rider
+*.csproj
+*.unityproj
+*.sln
+*.user
+*.pidb
+*.booproj
+*.svd
 
-# Permitir archivo .gitignore
-!.gitignore
+# Sistema
+.DS_Store
+*.swp

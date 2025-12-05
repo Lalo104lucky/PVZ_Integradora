@@ -60,15 +60,40 @@ public class ShooterPlantStateMachine : MonoBehaviour, IStateMachine
     // ¡AQUÍ ESTÁ LA SOLUCIÓN AL ERROR!
     // Esta función es llamada automáticamente por el Evento de la Animación
     // ---------------------------------------------------------
+    // Variable para almacenar la única instancia de la bala
+    private GameObject _currentBullet;
+
+    // ---------------------------------------------------------
+    // ¡AQUÍ ESTÁ LA SOLUCIÓN AL ERROR!
+    // Esta función es llamada automáticamente por el Evento de la Animación
+    // ---------------------------------------------------------
     public void Shoot()
     {
-        // 1. Instanciar bala
-        if (bulletPrefab != null)
+        // 1. Instanciar bala si no existe
+        if (_currentBullet == null && bulletPrefab != null)
         {
-            Instantiate(bulletPrefab, shootOrigin.position, Quaternion.identity);
+            _currentBullet = Instantiate(bulletPrefab, shootOrigin.position, Quaternion.identity);
+            if (_currentBullet.TryGetComponent(out Bullet bulletScript))
+            {
+                bulletScript.plantTransform = shootOrigin;
+            }
+        }
+        else if (_currentBullet != null)
+        {
+            // 2. Si ya existe, reutilizarla
+            _currentBullet.transform.position = shootOrigin.position;
+            _currentBullet.SetActive(true);
+            
+            // Reiniciar estado de la bala si tiene el componente Bullet
+            if (_currentBullet.TryGetComponent(out Bullet bulletScript))
+            {
+                // Forzamos el estado de disparo
+                bulletScript.isShooting = true;
+                bulletScript.ChangeState(bulletScript.StateShooting);
+            }
         }
 
-        // 2. Sonido
+        // 3. Sonido
         if (_audioSource != null && shootClips != null && shootClips.Length > 0)
         {
             _audioSource.PlayOneShot(shootClips[Random.Range(0, shootClips.Length)]);

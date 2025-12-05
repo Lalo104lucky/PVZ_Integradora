@@ -126,7 +126,16 @@ public class GameManager : MonoBehaviour
             sunSource.pitch = Random.Range(0.9f, 1.1f);
             sunSource.PlayOneShot(sunClip);
             suns += 25;
-            Destroy(sunHit.collider.gameObject);
+            
+            Sun sunScript = sunHit.collider.GetComponent<Sun>();
+            if (sunScript != null)
+            {
+                sunScript.Collect();
+            }
+            else
+            {
+                Destroy(sunHit.collider.gameObject);
+            }
         }
 
     }

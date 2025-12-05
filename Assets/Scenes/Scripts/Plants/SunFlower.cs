@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections.Generic;
 
 public class SunFlower : MonoBehaviour, IStateMachine
 {
@@ -17,7 +18,7 @@ public class SunFlower : MonoBehaviour, IStateMachine
     public SunFlowerProducingState StateProducing { get; private set; }
 
     // Pooling
-    private GameObject _currentSun;
+    private List<GameObject> _sunPool;
     public int AnimID_SpawningSun { get; private set; }
 
     void Awake()
@@ -25,6 +26,8 @@ public class SunFlower : MonoBehaviour, IStateMachine
         if (animator == null) animator = GetComponent<Animator>();
 
         AnimID_SpawningSun = Animator.StringToHash("SpawningSun");
+
+        _sunPool = new List<GameObject>();
 
         StateIdle = new SunFlowerIdleState(this);
         StateProducing = new SunFlowerProducingState(this);
@@ -52,27 +55,39 @@ public class SunFlower : MonoBehaviour, IStateMachine
         Vector3 spawnPosition = new Vector3(transform.position.x + Random.Range(-.5f, .5f), transform.position.y + Random.Range(0f, .5f), 0);
         float targetY = transform.position.y - 0.5f;
 
-        if (_currentSun == null)
+        GameObject sunToUse = null;
+
+        // Find inactive sun in pool
+        foreach (var sun in _sunPool)
         {
-            _currentSun = Instantiate(sunObject, spawnPosition, Quaternion.identity);
-            if (_currentSun.TryGetComponent(out Sun sunScript))
+            if (!sun.activeInHierarchy)
             {
-                sunScript.dropToYPos = targetY;
+                sunToUse = sun;
+                break;
             }
+        }
+
+        if (sunToUse == null)
+        {
+            // Create new sun if none available
+            sunToUse = Instantiate(sunObject, spawnPosition, Quaternion.identity);
+            Sun sunScript = sunToUse.GetComponent<Sun>();
+            if (sunScript != null)
+            {
+                sunScript.isPooled = true;
+            }
+            _sunPool.Add(sunToUse);
+        }
+
+        // Initialize sun
+        if (sunToUse.TryGetComponent(out Sun sScript))
+        {
+            sScript.ResetSun(spawnPosition, targetY);
         }
         else
         {
-            // Reuse existing sun
-            if (_currentSun.TryGetComponent(out Sun sunScript))
-            {
-                sunScript.ResetSun(spawnPosition, targetY);
-            }
-            else
-            {
-                // Fallback if script missing
-                _currentSun.transform.position = spawnPosition;
-                _currentSun.SetActive(true);
-            }
+            sunToUse.transform.position = spawnPosition;
+            sunToUse.SetActive(true);
         }
     }
 

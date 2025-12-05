@@ -7,6 +7,8 @@ public class Sun : MonoBehaviour
     public float dropToYPos;
     private float speed = 1f;
 
+    public bool isPooled = false;
+
     private void OnEnable()
     {
         // Auto-hide after random time instead of Destroy
@@ -31,8 +33,27 @@ public class Sun : MonoBehaviour
         gameObject.SetActive(true);
     }
 
+    public void Collect()
+    {
+        if (isPooled)
+        {
+            gameObject.SetActive(false);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
     private void HideSun()
     {
-        gameObject.SetActive(false);
+        if (isPooled)
+        {
+            gameObject.SetActive(false);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 }

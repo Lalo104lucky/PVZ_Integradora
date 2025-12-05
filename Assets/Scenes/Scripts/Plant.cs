@@ -5,6 +5,11 @@ public class Plant : MonoBehaviour
 
     public int health;
     public Tile myTile;
+    public double damage = 5;
+
+    public double range = 5;
+
+    public GameObject plantUp;
 
     private void Start()
     {

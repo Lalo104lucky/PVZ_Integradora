@@ -823,9 +823,8 @@ GameObject:
   - component: {fileID: 5787710553307903125}
   - component: {fileID: 7742528119437840497}
   - component: {fileID: 7230475453793143202}
-  - component: {fileID: 8880508565130509506}
-  - component: {fileID: 8770745102453831519}
   - component: {fileID: -8425594222413456214}
+  - component: {fileID: 5937070889382338677}
   m_Layer: 10
   m_Name: Ice Peashooter
   m_TagString: Untagged
@@ -922,44 +921,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.0774525, y: 1.2232461}
   m_EdgeRadius: 0
---- !u!114 &8880508565130509506
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3005303575374758686}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 38127b5b2f61a02448f41984ffe44690, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Plant
-  health: 5
-  myTile: {fileID: 0}
---- !u!114 &8770745102453831519
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3005303575374758686}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8510fd4623387f64fa3f1e010e1bf7ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BasicShooter
-  bullet: {fileID: 4582790994520845029, guid: e63daad339d411545a6e3e4092714fd4, type: 3}
-  shootOrigin: {fileID: 2197625236239628945}
-  cooldown: 1.5
-  range: 99
-  shootMask:
-    serializedVersion: 2
-    m_Bits: 128
-  animator: {fileID: 7742528119437840497}
-  shootClips:
-  - {fileID: 8300000, guid: 8cde1d8f34425294497e248c5699994b, type: 3}
-  - {fileID: 8300000, guid: ba0c042e172ab194a98c8351487b6caa, type: 3}
-  freezeShoot: {fileID: 8300000, guid: 04057aad73deedd4c8bcb520b9fd791d, type: 3}
 --- !u!82 &-8425594222413456214
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1057,6 +1018,28 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &5937070889382338677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3005303575374758686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6b9b97884453580cbae6df9b8e0fa7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ShooterPlantStateMachine
+  bulletPrefab: {fileID: 4582790994520845029, guid: e63daad339d411545a6e3e4092714fd4, type: 3}
+  shootOrigin: {fileID: 2197625236239628945}
+  range: 10
+  shootMask:
+    serializedVersion: 2
+    m_Bits: 128
+  animator: {fileID: 7742528119437840497}
+  shootClips:
+  - {fileID: 8300000, guid: 8cde1d8f34425294497e248c5699994b, type: 3}
+  - {fileID: 8300000, guid: 04057aad73deedd4c8bcb520b9fd791d, type: 3}
 --- !u!1 &3097698076516176932
 GameObject:
   m_ObjectHideFlags: 0
@@ -1699,6 +1682,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2197625236239628945}
+  - component: {fileID: 6703658819843751876}
+  - component: {fileID: 3973890149662451212}
   m_Layer: 10
   m_Name: ShootOrigin
   m_TagString: Untagged
@@ -1721,6 +1706,66 @@ Transform:
   m_Children: []
   m_Father: {fileID: 5787710553307903125}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &6703658819843751876
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7160925993530578702}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!114 &3973890149662451212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7160925993530578702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a3a80e2f0e44c4359efb06b5b6cf575, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FirePoint
+  zombieInRange: 0
+  range: 99
 --- !u!1 &7420716611314537628
 GameObject:
   m_ObjectHideFlags: 0

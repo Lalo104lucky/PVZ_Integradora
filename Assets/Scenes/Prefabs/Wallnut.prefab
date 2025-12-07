@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4234495699125958018}
   - component: {fileID: 8488165607200128448}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Wallnut_body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -103,9 +103,10 @@ GameObject:
   - component: {fileID: 5937114138113512030}
   - component: {fileID: 7719025166263550124}
   - component: {fileID: 9126453153113047763}
-  m_Layer: 0
+  - component: {fileID: -5130443691422446154}
+  m_Layer: 10
   m_Name: Wallnut
-  m_TagString: Untagged
+  m_TagString: Plant
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -147,6 +148,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Plant
   health: 55
   myTile: {fileID: 0}
+  damage: 5
+  range: 5
+  plantUp: {fileID: 0}
 --- !u!61 &5937114138113512030
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -231,6 +235,33 @@ MonoBehaviour:
   phase2Threshold: 0.66
   phase3Threshold: 0.33
   maxHealth: 55
+--- !u!50 &-5130443691422446154
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1972166180106823386}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &3140044980578909772
 GameObject:
   m_ObjectHideFlags: 0
@@ -241,7 +272,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6255625709767237874}
   - component: {fileID: 4660462547180030649}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Ojos_Cerradps_Derecho
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -331,7 +362,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5596192512540153918}
   - component: {fileID: 3262471437829084715}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Wallnut_SemiCompleta
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -421,7 +452,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2962046650388713210}
   - component: {fileID: 4571171562878675593}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Wallnut_Rota
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -511,7 +542,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2453764673752650148}
   - component: {fileID: 1709041859624508676}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Ojos_Medio_Derecho
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -601,7 +632,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3398554311685676391}
   - component: {fileID: 5922130677983799908}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sombra
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -691,7 +722,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6259598701214464620}
   - component: {fileID: 8219588211893194690}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Ojos_Medio_Izquierdo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -781,7 +812,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7131349030421089359}
   - component: {fileID: 5746292023503786522}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Ojos_Cerrados_Izquierdo
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -825,9 +825,10 @@ GameObject:
   - component: {fileID: 7230475453793143202}
   - component: {fileID: -8425594222413456214}
   - component: {fileID: 5937070889382338677}
+  - component: {fileID: -7936799363744886795}
   m_Layer: 10
   m_Name: Ice Peashooter
-  m_TagString: Untagged
+  m_TagString: Plant
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1040,6 +1041,33 @@ MonoBehaviour:
   shootClips:
   - {fileID: 8300000, guid: 8cde1d8f34425294497e248c5699994b, type: 3}
   - {fileID: 8300000, guid: 04057aad73deedd4c8bcb520b9fd791d, type: 3}
+--- !u!50 &-7936799363744886795
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3005303575374758686}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &3097698076516176932
 GameObject:
   m_ObjectHideFlags: 0

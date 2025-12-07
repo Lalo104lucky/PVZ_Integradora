@@ -621,11 +621,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e4fcd89c3c0cdf43a1c7b07b645c18e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Zombie
+  health: 10
+  damage: 1
+  speed: 1
+  attackCooldown: 1
+  type: {fileID: 11400000, guid: c5490618754c60f409cda87a4e9e2225, type: 2}
   plantMask:
     serializedVersion: 2
     m_Bits: 1024
-  type: {fileID: 11400000, guid: c5490618754c60f409cda87a4e9e2225, type: 2}
-  targetPlant: {fileID: 0}
   chompClips:
   - {fileID: 8300000, guid: a2ee2eaf3182e5540a62f6890596e075, type: 3}
   - {fileID: 8300000, guid: 3d6f2add516c77c4fa132f8eb534ec16, type: 3}
@@ -639,7 +642,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 3eb957cdbd7ef4e41a4c2400d825168d, type: 3}
   - {fileID: 8300000, guid: a389627870182714781dc68b762091b0, type: 3}
   - {fileID: 8300000, guid: 20a119e106d24c14fb075eb23faf039e, type: 3}
-  lastZombie: 0
+  animator: {fileID: 4300741976597553722}
   dead: 0
 --- !u!61 &-4328346884880202779
 BoxCollider2D:
@@ -671,7 +674,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0

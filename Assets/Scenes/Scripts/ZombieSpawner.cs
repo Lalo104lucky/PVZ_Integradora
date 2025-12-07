@@ -56,8 +56,8 @@ public class ZombieSpawner : MonoBehaviour
         Zombie zombieScript = myZombie.GetComponent<Zombie>();
         zombieScript.type = selectedType;
 
-        if (zombiesSpawned >= zombieMax)
-            zombieScript.lastZombie = true;
+        //if (zombiesSpawned >= zombieMax)
+        //    zombieScript.lastZombie = true;
     }
 
     public void OnZombieKilled()

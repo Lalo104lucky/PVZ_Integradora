@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEditor.Rendering.LookDev;
 
 public class Zombie : MonoBehaviour, IStateMachine
 {
@@ -81,8 +82,9 @@ public class Zombie : MonoBehaviour, IStateMachine
     }
 
     // --- Trigger Logic (Replaces Raycast) ---
-    private void OnTriggerEnter2D(Collider2D collider)
+    void OnTriggerEnter2D(Collider2D collider)
     {
+        Debug.Log("Trigger Entered");
         if (dead) return;
 
         if (collider.CompareTag("Plant"))
@@ -95,7 +97,7 @@ public class Zombie : MonoBehaviour, IStateMachine
         }
     }
 
-    private void OnTriggerExit2D(Collider2D collider)
+    void OnTriggerExit2D(Collider2D collider)
     {
         if (dead) return;
 

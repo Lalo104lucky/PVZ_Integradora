@@ -5,6 +5,7 @@ public class Sun : MonoBehaviour
 {
 
     public float dropToYPos;
+    public int sunValue = 25;
     private float speed = 1f;
 
     public bool isPooled = false;

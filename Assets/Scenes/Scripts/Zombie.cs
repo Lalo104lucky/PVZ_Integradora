@@ -285,7 +285,8 @@ public class ZombieEatState : IState
         if (_sm.animator != null)
             _sm.animator.SetBool("IsEating", true);
         
-        _currentTimer = 0f; 
+        _currentTimer = 0f;
+        _sm.PlayChomp();
     }
 
     public void Execute()

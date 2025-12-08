@@ -67,6 +67,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
     <Compile Include="Assets\Scenes\Scripts\Tile.cs" />
     <Compile Include="Assets\Scenes\Scripts\CreditsVideo.cs" />
+    <Compile Include="Assets\Scenes\Scripts\Plants\SunShroom.cs" />
     <Compile Include="Assets\Scenes\Scripts\Plants\FirePoint.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
     <Compile Include="Assets\Scenes\Scripts\GameManager.cs" />
@@ -98,11 +99,14 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshSpawner.cs" />
     <Compile Include="Assets\Scenes\Scripts\Plant.cs" />
+    <Compile Include="Assets\Scenes\Scripts\Plants\Papapum.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
+    <Compile Include="Assets\Scenes\Scripts\Plants\SporeProjectile.cs" />
     <Compile Include="Assets\Scenes\Scripts\Plants\IState.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\DropdownSample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
+    <Compile Include="Assets\Scenes\Scripts\PuffShroomAttack.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_PhoneNumberValidator.cs" />
     <Compile Include="Assets\Scenes\Scripts\Plants\ShooterStateMachine.cs" />

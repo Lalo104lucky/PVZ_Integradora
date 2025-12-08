@@ -36,7 +36,7 @@ public class Bullet : MonoBehaviour, IStateMachine
         StateShooting = new BulletShootingState(this);
 
         // Estado inicial
-        ChangeState(StateIdle);
+        ChangeState(isShooting ? StateShooting : StateIdle);
     }
 
     void Update()
@@ -105,6 +105,7 @@ public class Bullet : MonoBehaviour, IStateMachine
 public class BulletIdleState : IState
 {
     private readonly Bullet _sm;
+    private float speed = 7f;
 
     public BulletIdleState(Bullet stateMachine)
     {
@@ -130,7 +131,7 @@ public class BulletIdleState : IState
             // Wait, previous file content:
             // 14:             rb.linearVelocity = Vector2.right * speed;
             // So the user IS using linearVelocity. I will keep it.
-            _sm.Rb.linearVelocity = Vector2.zero; 
+            _sm.Rb.linearVelocity = Vector2.right * speed; 
             _sm.Rb.angularVelocity = 0f;
         }
     }

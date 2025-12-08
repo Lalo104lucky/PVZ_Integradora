@@ -1,0 +1,446 @@
+fileFormatVersion: 2
+guid: 556648d53c4a9174eadaba17619f4e29
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5124732745912916581
+    second: PC _ Computer - Plants vs. Zombies - Plants - Potato Mine_0
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PC _ Computer - Plants vs. Zombies - Plants - Potato Mine_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 253
+        width: 100
+        height: 59
+      alignment: 9
+      pivot: {x: 0.50783324, y: 0.68304753}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b956c0738ba41e8b0800000000000000
+      internalID: -5124732745912916581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Plants vs. Zombies - Plants - Potato Mine_1
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 217
+        width: 43
+        height: 23
+      alignment: 9
+      pivot: {x: 0.48401392, y: 0.4939147}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0587c56e82358e441b89bcf75237a0d4
+      internalID: 509215984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Plants vs. Zombies - Plants - Potato Mine_2
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 217
+        width: 43
+        height: 23
+      alignment: 9
+      pivot: {x: 0.48401392, y: 0.4939147}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24a89c5c74ae27d47bfc0c46432c67a3
+      internalID: -619532350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Plants vs. Zombies - Plants - Potato Mine_3
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 216
+        width: 43
+        height: 23
+      alignment: 9
+      pivot: {x: 0.48401392, y: 0.4939147}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb16d788086e4c9448ff24a367d8fd82
+      internalID: -331455212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Plants vs. Zombies - Plants - Potato Mine_4
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 189
+        width: 45
+        height: 18
+      alignment: 9
+      pivot: {x: 0.52025, y: 0.22214253}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbbc468d32e940840aec73832496c378
+      internalID: 1872075112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Plants vs. Zombies - Plants - Potato Mine_5
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 143
+        width: 26
+        height: 26
+      alignment: 9
+      pivot: {x: 0.52025056, y: 0.39082757}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1651d5b2979bb96499b94c8ee225be0f
+      internalID: -987837609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Plants vs. Zombies - Plants - Potato Mine_6
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 141
+        width: 30
+        height: 30
+      alignment: 9
+      pivot: {x: 0.5342599, y: 0.323613}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e35b0006edb3a334da8316ef312425da
+      internalID: 870671906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Plants vs. Zombies - Plants - Potato Mine_7
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 114
+        width: 10
+        height: 10
+      alignment: 9
+      pivot: {x: 0.49349543, y: 0.42186853}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97d16838fc2249440afdeff81af61e8e
+      internalID: -1193293189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Plants vs. Zombies - Plants - Potato Mine_8
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 105
+        width: 32
+        height: 18
+      alignment: 9
+      pivot: {x: 0.5614379, y: 0.4589268}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78d9d7f9c069ee34c8d7fcdc75b3c225
+      internalID: 1809095148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Plants vs. Zombies - Plants - Potato Mine_9
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 109
+        width: 20
+        height: 14
+      alignment: 9
+      pivot: {x: 0.5614379, y: 0.4589268}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56292c6f44e0dc142935605309a109c1
+      internalID: -2005149945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Plants vs. Zombies - Plants - Potato Mine_10
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 112
+        width: 19
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5614379, y: 0.4589268}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cff00b7d82c691249929e82011a52923
+      internalID: 406912568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Plants vs. Zombies - Plants - Potato Mine_11
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 112
+        width: 20
+        height: 11
+      alignment: 9
+      pivot: {x: 0.5614379, y: 0.4589268}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38296b45279ef9f4592e5d338baa6257
+      internalID: 1324054732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Plants vs. Zombies - Plants - Potato Mine_12
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 103
+        width: 34
+        height: 20
+      alignment: 9
+      pivot: {x: 0.5614379, y: 0.4589268}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6814200caf20cac46b6a638e55b90e7d
+      internalID: -416886593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Plants vs. Zombies - Plants - Potato Mine_13
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1
+        width: 129
+        height: 92
+      alignment: 9
+      pivot: {x: 0.5614379, y: 0.4589268}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff9b9cf94d56d72429fb3d5637a177de
+      internalID: -1006517082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: fc64b39d8ca138f469e5be5eba23279e
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceOnImport
+        value: False
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      PC _ Computer - Plants vs. Zombies - Plants - Potato Mine_0: -5124732745912916581
+      PC _ Computer - Plants vs. Zombies - Plants - Potato Mine_1: 509215984
+      PC _ Computer - Plants vs. Zombies - Plants - Potato Mine_10: 406912568
+      PC _ Computer - Plants vs. Zombies - Plants - Potato Mine_11: 1324054732
+      PC _ Computer - Plants vs. Zombies - Plants - Potato Mine_12: -416886593
+      PC _ Computer - Plants vs. Zombies - Plants - Potato Mine_13: -1006517082
+      PC _ Computer - Plants vs. Zombies - Plants - Potato Mine_2: -619532350
+      PC _ Computer - Plants vs. Zombies - Plants - Potato Mine_3: -331455212
+      PC _ Computer - Plants vs. Zombies - Plants - Potato Mine_4: 1872075112
+      PC _ Computer - Plants vs. Zombies - Plants - Potato Mine_5: -987837609
+      PC _ Computer - Plants vs. Zombies - Plants - Potato Mine_6: 870671906
+      PC _ Computer - Plants vs. Zombies - Plants - Potato Mine_7: -1193293189
+      PC _ Computer - Plants vs. Zombies - Plants - Potato Mine_8: 1809095148
+      PC _ Computer - Plants vs. Zombies - Plants - Potato Mine_9: -2005149945
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

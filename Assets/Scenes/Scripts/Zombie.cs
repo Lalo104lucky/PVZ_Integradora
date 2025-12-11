@@ -1,6 +1,6 @@
 using UnityEngine;
 using System.Collections;
-using UnityEditor.Rendering.LookDev;
+using UnityEngine.Rendering;
 
 public class Zombie : MonoBehaviour, IStateMachine
 {
@@ -294,7 +294,7 @@ public class ZombieEatState : IState
         if (_sm.dead) return;
 
         // If plant died (null or destroyed)
-        if (TargetPlant == null || TargetPlant.health <= 0) // Assuming Plant has health check
+        if (TargetPlant == null || !TargetPlant)
         {
             _sm.ChangeState(_sm.StateWalk);
             return;
@@ -305,12 +305,15 @@ public class ZombieEatState : IState
         if (_currentTimer >= _sm.attackCooldown)
         {
             _sm.PlayChomp();
+ 
+            int healthBeforeHit = TargetPlant.health;
+         
             TargetPlant.Hit(_sm.damage);
-            
-            if (TargetPlant.health <= 0)
-            {
-                 _sm.PlayGulp();
-            }
+          
+            if (healthBeforeHit <= _sm.damage)
+                {
+                    _sm.PlayGulp();
+                }
 
             _currentTimer = 0f;
         }

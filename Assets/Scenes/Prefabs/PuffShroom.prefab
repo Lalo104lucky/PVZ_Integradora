@@ -194,6 +194,7 @@ GameObject:
   - component: {fileID: 4282498238283003536}
   - component: {fileID: 7631360339047851327}
   - component: {fileID: 1457929355901088243}
+  - component: {fileID: 6562250048796789008}
   m_Layer: 10
   m_Name: PuffShroom
   m_TagString: Plant
@@ -261,9 +262,7 @@ MonoBehaviour:
     m_Bits: 128
   animator: {fileID: 8652828607626691718}
   shootClips:
-  - {fileID: 8300000, guid: c4957c9b2178c804d81ccc3f5541e8d6, type: 3}
-  - {fileID: 8300000, guid: 74bc791b378c71240b83972844d2a4d1, type: 3}
-  - {fileID: 8300000, guid: 6a86c0ffc74f8e240ba565bbb10f6a38, type: 3}
+  - {fileID: 8300000, guid: b9697c8ad77a26445a7a9a121652a463, type: 3}
 --- !u!61 &4282498238283003536
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -434,6 +433,23 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &6562250048796789008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3572628852217438448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38127b5b2f61a02448f41984ffe44690, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Plant
+  health: 5
+  myTile: {fileID: 0}
+  damage: 5
+  range: 5
+  plantUp: {fileID: 3572628852217438448}
 --- !u!1 &4090653646540372111
 GameObject:
   m_ObjectHideFlags: 0

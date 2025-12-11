@@ -1192,7 +1192,7 @@ MonoBehaviour:
   myTile: {fileID: 0}
   damage: 5
   range: 5
-  plantUp: {fileID: 0}
+  plantUp: {fileID: 6916277666485235954}
 --- !u!114 &5958786882503133833
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1206,7 +1206,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SunFlower
   sunObject: {fileID: 8428259926322478031, guid: 74ff9158e094ed846af9ebb42912f22d, type: 3}
-  cooldown: 7
+  cooldown: 9
   animator: {fileID: 1191641935025809881}
   headSprite: {fileID: 713730369315973456}
   headSprite1: {fileID: 8847462687082183708}

@@ -6,12 +6,14 @@ public class CreditsVideo : MonoBehaviour
 
     public GameObject menuCanvas;
     public GameObject videoPanel;
+    public AudioSource backgroundMusic;
 
     private VideoPlayer videoPlayer;
 
 
     void Start()
     {
+
     }
 
     void Update()
@@ -34,6 +36,12 @@ public class CreditsVideo : MonoBehaviour
             videoPlayer.loopPointReached += EndReached;
         }
 
+        // Stop the background music
+        if (backgroundMusic != null && backgroundMusic.isPlaying)
+        {
+            backgroundMusic.Pause();
+        }
+
         videoPlayer.Play();
     }
 
@@ -42,6 +50,12 @@ public class CreditsVideo : MonoBehaviour
         vp.Stop();
         videoPanel.SetActive(false);
         menuCanvas.SetActive(true);
+        
+        // Resume the background music
+        if (backgroundMusic != null && !backgroundMusic.isPlaying)
+        {
+            backgroundMusic.UnPause();
+        }
     }
 
     public void ExitCredits()
@@ -53,5 +67,11 @@ public class CreditsVideo : MonoBehaviour
         }
         videoPanel.SetActive(false);
         menuCanvas.SetActive(true);
+      
+        // Resume the background music
+        if (backgroundMusic != null && !backgroundMusic.isPlaying)
+        {
+            backgroundMusic.UnPause();
+        }
     }
 }

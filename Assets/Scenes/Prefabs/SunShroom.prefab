@@ -193,6 +193,7 @@ GameObject:
   - component: {fileID: 766513352300720341}
   - component: {fileID: 5422980887666581750}
   - component: {fileID: 7463664731726503834}
+  - component: {fileID: 6676782121192967864}
   m_Layer: 10
   m_Name: SunShroom
   m_TagString: Plant
@@ -252,8 +253,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SunShroom
   sunPrefab: {fileID: 8428259926322478031, guid: 74ff9158e094ed846af9ebb42912f22d, type: 3}
-  cooldown: 5
-  tiempoParaCrecer: 10
+  cooldown: 10
+  tiempoParaCrecer: 30
   animator: {fileID: 1935705641814196748}
 --- !u!50 &5422980887666581750
 Rigidbody2D:
@@ -312,7 +313,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -328,6 +329,23 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.87798417, y: 1.0472236}
   m_EdgeRadius: 0
+--- !u!114 &6676782121192967864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4339680016712625313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38127b5b2f61a02448f41984ffe44690, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Plant
+  health: 5
+  myTile: {fileID: 0}
+  damage: 5
+  range: 5
+  plantUp: {fileID: 4339680016712625313}
 --- !u!1 &5684321893965271277
 GameObject:
   m_ObjectHideFlags: 0
